@@ -10,7 +10,7 @@ def part2(data)
 end
 
 if __FILE__ == $0
-  data = get_data($0[2..3])
+  data = get_data("#{$0[2..3]}")
   puts part1(data)
   puts part2(data)
 end
