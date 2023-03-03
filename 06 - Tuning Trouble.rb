@@ -9,6 +9,8 @@ def unique_string_at(data, length)
   end
 end
 
+# RegEx solution for 1 (ungreedy): '^\w+(\w)(?!\g1)(\w)(?!\g1|\g2)(\w)(?!\g1|\g2|\g3)(\w)\w+$'
+
 def part1(data)
   unique_string_at(data, 4)
 end
